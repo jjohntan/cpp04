@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:08 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 19:18:46 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/26 16:58:34 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,13 @@
 #include <string>
 #include <iostream>
 
+//base class
 class Animal
 {
 	protected:
 		std::string type;
 	public:
-		Animal(/* args */);
+		Animal();
 		Animal(std::string type_);
 		Animal(const Animal &other);
 		Animal &operator=(const Animal &other);

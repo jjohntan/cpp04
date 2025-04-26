@@ -1,7 +1,8 @@
 NAME = a.out
 
 SRCS = main.cpp \
-	Animal.cpp
+	Animal.cpp \
+	Dog.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

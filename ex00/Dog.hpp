@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Dog.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/24 19:01:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/26 17:04:54 by jetan            ###   ########.fr       */
+/*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
+/*   Updated: 2025/04/26 17:00:00 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef DOG_HPP
+# define DOG_HPP
+
 #include "Animal.hpp"
 
-int main()
+//derived class
+class Dog: public Animal
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	const Animal* i = new Cat();
-	
-	std::cout << j->getType() << " " << std::endl;
-	std::cout << i->getType() << " " << std::endl;
-	i->makeSound(); //will output the cat sound!
-	j->makeSound();
-	meta->makeSound();
-	
-	return 0;
-}
+	private:
+		
+	public:
+		Dog();
+		Dog(std::string type_);
+		Dog(const Dog &other);
+		Dog &operator=(const Dog &other);
+		~Dog();
+		void makeSound();
+};
+
+#endif
