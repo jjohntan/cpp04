@@ -6,20 +6,15 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:12 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/24 19:15:03 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/26 18:27:01 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
-Animal::Animal()
+Animal::Animal(): type("")
 {
 	std::cout << "Animal Default constructor called" << std::endl;
-}
-
-Animal::Animal(std::string type_): type(type_)
-{
-	std::cout << "Animal Parameter constructor called" << std::endl;
 }
 
 Animal::Animal(const Animal &other)
@@ -42,3 +37,12 @@ Animal::~Animal()
 {
 	std::cout << "Animal Destructor called" << std::endl;
 }
+
+void Animal::makeSound() const
+{
+	std::cout << "hello" << std::endl;
+}
+
+
+std::string Animal::getType() const{ return this->type; }
+

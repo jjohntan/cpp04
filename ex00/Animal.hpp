@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:08 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/26 16:58:34 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/26 19:04:45 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,12 @@ class Animal
 	protected:
 		std::string type;
 	public:
-		Animal();
-		Animal(std::string type_);
-		Animal(const Animal &other);
-		Animal &operator=(const Animal &other);
-		~Animal();
+		Animal();//Default constructor
+		Animal(const Animal &other);//Copy constructor
+		Animal &operator=(const Animal &other);//Copy assignment operator
+		~Animal();//Destructor
+		virtual void makeSound() const;
+		std::string getType() const;
 };
 
 #endif
