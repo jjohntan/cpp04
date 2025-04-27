@@ -2,7 +2,8 @@ NAME = a.out
 
 SRCS = main.cpp \
 	Animal.cpp \
-	Dog.cpp
+	Dog.cpp \
+	Cat.cpp
 
 OBJS = $(SRCS:.cpp=.o)
 

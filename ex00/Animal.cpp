@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:12 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/26 18:27:01 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/27 18:14:57 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,9 +40,8 @@ Animal::~Animal()
 
 void Animal::makeSound() const
 {
-	std::cout << "hello" << std::endl;
+	std::cout << "What does the fox say!" << std::endl;
 }
-
 
 std::string Animal::getType() const{ return this->type; }
 
