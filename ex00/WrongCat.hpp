@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongWrongCat.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/28 20:08:58 by jetan            ###   ########.fr       */
+/*   Created: 2025/04/28 14:10:33 by jetan             #+#    #+#             */
+/*   Updated: 2025/04/28 14:31:06 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef WRONGWrongCat_HPP
+# define WRONGWrongCat_HPP
 
-#include "Animal.hpp"
+#include "WrongAnimal.hpp"
 
 //derived class
-class Cat: public Animal
+class WrongCat: public WrongAnimal
 {
 	private:
-		
+	
 	public:
-		Cat();//Default constructor
-		Cat(const Cat &other);//Copy constructor
-		Cat &operator=(const Cat &other);//Copy assignment operator
-		~Cat();//Destructor
+		WrongCat();//Default constructor
+		WrongCat(const WrongCat &other);//Copy constructor
+		WrongCat &operator=(const WrongCat &other);//Copy assignment operator
+		~WrongCat();//Destructor
 		void makeSound() const;
 };
+
 
 #endif

@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*   WrongAnimal.hpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/28 20:08:58 by jetan            ###   ########.fr       */
+/*   Created: 2025/04/28 14:11:45 by jetan             #+#    #+#             */
+/*   Updated: 2025/04/28 15:37:07 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef CAT_HPP
-# define CAT_HPP
+#ifndef WRONGANIMAL_HPP
+# define WRONGANIMAL_HPP
 
-#include "Animal.hpp"
+#include <string>
+#include <iostream>
 
-//derived class
-class Cat: public Animal
+class WrongAnimal
 {
-	private:
-		
+	protected:
+		std::string type;
 	public:
-		Cat();//Default constructor
-		Cat(const Cat &other);//Copy constructor
-		Cat &operator=(const Cat &other);//Copy assignment operator
-		~Cat();//Destructor
+		WrongAnimal();//Default constructor
+		WrongAnimal(const WrongAnimal &other);//Copy constructor
+		WrongAnimal &operator=(const WrongAnimal &other);//Copy assignment operator
+		~WrongAnimal();//Destructor
 		void makeSound() const;
+		std::string getType() const;
 };
 
 #endif
