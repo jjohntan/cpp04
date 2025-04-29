@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:37:48 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/29 17:49:27 by jetan            ###   ########.fr       */
+/*   Updated: 2025/04/29 17:54:43 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define BRAIN_HPP
 
 #include <string>
+#include <iostream>
 
 class Brain
 {
