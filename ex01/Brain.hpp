@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:37:48 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/29 17:54:43 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 14:40:31 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,8 @@ class Brain
 		Brain(const Brain &other);
 		Brain &operator=(const Brain &other);
 		~Brain();
+		void setIdea(int index, const std::string _idea);
+		std::string getIdea(int index);
 };
 
 

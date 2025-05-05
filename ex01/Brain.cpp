@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/29 17:37:51 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/29 17:57:21 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 14:55:30 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,4 +47,17 @@ Brain &Brain::operator=(const Brain &other)
 Brain::~Brain()
 {
 	std::cout << "Brain Destructor called" << std::endl;
+}
+
+void Brain::setIdea(int index, const std::string _idea)
+{
+	if (index >= 0 && index < 100)
+		ideas[index] = _idea;
+}
+
+std::string Brain::getIdea(int index)
+{
+	if (index >= 0 && index < 100)
+		return ideas[index];
+	return ("");
 }
