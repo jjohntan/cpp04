@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:12 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/27 18:14:57 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 14:17:17 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,3 @@ void Animal::makeSound() const
 }
 
 std::string Animal::getType() const{ return this->type; }
-
