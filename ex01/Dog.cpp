@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 16:55:17 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/30 14:15:06 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 15:18:49 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,17 @@ Dog::~Dog()
 void Dog::makeSound() const
 {
 	std::cout << "Woof!" << std::endl;
+}
+
+void Dog::setBrain(int index, std::string _idea)
+{
+	if (index >= 0 && index < 100)
+		brain->setIdea(index, _idea);
+}
+
+std::string Dog::getBrain(int index)
+{
+	if (index >= 0 && index < 100)
+		return brain->getIdea(index);
+	return ("");
 }
