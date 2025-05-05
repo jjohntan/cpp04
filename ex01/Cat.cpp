@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/27 18:01:06 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/30 14:19:42 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 15:06:45 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,17 @@ Cat::~Cat()
 void Cat::makeSound() const
 {
 	std::cout << "Meow!" << std::endl;
+}
+
+void Cat::setBrain(int index, std::string _idea)
+{
+	if (index >= 0 && index < 100)
+		brain->setIdea(index, _idea);
+}
+
+std::string Cat::getBrain(int index)
+{
+	if (index >= 0 && index < 100)
+		return brain->getIdea(index);
+	return ("");
 }

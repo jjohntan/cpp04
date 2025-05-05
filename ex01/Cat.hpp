@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/29 19:01:02 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 14:43:04 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ class Cat: public Animal
 		Cat &operator=(const Cat &other);//Copy assignment operator
 		~Cat();//Destructor
 		void makeSound() const;
+		void setBrain(int index, std::string _idea);
+		std::string getBrain(int index);
 };
 
 #endif
