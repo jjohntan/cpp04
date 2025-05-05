@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:01:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/05 15:37:55 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 15:41:20 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,9 @@ int main()
 
 	std::cout << "------------- array -------------" << std::endl;
 	Animal* animal[4] = {new Dog, new Dog, new Cat, new Cat};// an array of Animal objects
+	
+	for (int i = 0; i < 4; i++)
+		animal[i]->makeSound();
 	
 	for (int i = 0; i < 4; i++)//loop over and delete every Animal
 		delete animal[i];
