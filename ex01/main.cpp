@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:01:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/05 15:23:07 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/05 15:37:55 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,12 @@ int main()
 	delete j;//should not create a leak
 	delete i;
 
+	std::cout << "------------- array -------------" << std::endl;
+	Animal* animal[4] = {new Dog, new Dog, new Cat, new Cat};// an array of Animal objects
+	
+	for (int i = 0; i < 4; i++)//loop over and delete every Animal
+		delete animal[i];
+	
 	std::cout << "----------- deep copy -----------" << std::endl;
 	Cat original;
 	original.setBrain(0, "Fish!");
