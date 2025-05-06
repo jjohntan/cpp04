@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:03:08 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/28 16:29:42 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/06 17:30:46 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ class Animal
 		Animal();//Default constructor
 		Animal(const Animal &other);//Copy constructor
 		Animal &operator=(const Animal &other);//Copy assignment operator
-		virtual ~Animal();//Destructor
-		virtual void makeSound() const;
+		virtual ~Animal();//virtual Destructor
+		virtual void makeSound() const;//virtual function
 		std::string getType() const;
 };
 

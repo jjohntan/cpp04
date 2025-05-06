@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/06 17:27:04 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/06 19:26:46 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 //derived class
 class Dog: public Animal
 {
-	private:
-		
 	public:
 		Dog();//Default constructor
 		Dog(const Dog &other);//Copy constructor

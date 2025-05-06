@@ -18,8 +18,6 @@
 //derived class
 class WrongCat: public WrongAnimal
 {
-	private:
-	
 	public:
 		WrongCat();//Default constructor
 		WrongCat(const WrongCat &other);//Copy constructor

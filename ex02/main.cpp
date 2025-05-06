@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:01:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/06 17:21:27 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/06 18:05:22 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,30 +38,43 @@ int main()
 	originalCat.setBrain(0, "Fish!");
 	
 	Cat copyCat;
-	
 	copyCat = originalCat;
-	copyCat.setBrain(0, "Fish Fish!");
 	
+	std::cout << "\nbefore" << std::endl;
 	std::cout << originalCat.getBrain(0) << std::endl;
 	std::cout << copyCat.getBrain(0) << std::endl;
 
-	std::cout << "--------------- dog ---------------" << std::endl;	
+	copyCat.setBrain(0, "Fish Fish!");
+	
+	std::cout << "\nafter" << std::endl;
+	std::cout << originalCat.getBrain(0) << std::endl;
+	std::cout << copyCat.getBrain(0) << std::endl;
+
+	std::cout << "--------------- dog ---------------" << std::endl;
 	Dog originalDog;
 	originalDog.setBrain(0, "Bone!");
 	
 	Dog copyDog;
-	
 	copyDog = originalDog;
-	copyDog.setBrain(0, "Bone Bone!");
 	
+	std::cout << "\nbefore" << std::endl;
 	std::cout << originalDog.getBrain(0) << std::endl;
 	std::cout << copyDog.getBrain(0) << std::endl;
-
+	
+	copyDog.setBrain(0, "Bone Bone!");
+	
+	std::cout << "\nafter" << std::endl;
+	std::cout << originalDog.getBrain(0) << std::endl;
+	std::cout << copyDog.getBrain(0) << std::endl;
+	std::cout << "------------------------------" << std::endl;
+	
 	// AAnimal *fox= new AAnimal;//create an object from abstract class
 	
 	// fox->makesound();
 	
 	// delete fox;
+	std::cout << "------------------------------" << std::endl;
+
 	
 	return 0;
 }
