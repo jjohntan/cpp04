@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/24 19:01:36 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/05 16:41:03 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/06 17:21:27 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,8 @@ int main()
 	copyDog = originalDog;
 	copyDog.setBrain(0, "Bone Bone!");
 	
-	std::cout << originalCat.getBrain(0) << std::endl;
-	std::cout << copyCat.getBrain(0) << std::endl;
+	std::cout << originalDog.getBrain(0) << std::endl;
+	std::cout << copyDog.getBrain(0) << std::endl;
 
 	// AAnimal *fox= new AAnimal;//create an object from abstract class
 	
