@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 16:54:18 by jetan             #+#    #+#             */
-/*   Updated: 2025/04/26 19:04:41 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/06 17:27:04 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Dog: public Animal
 		Dog(const Dog &other);//Copy constructor
 		Dog &operator=(const Dog &other);//Copy assignment operator
 		~Dog();//Destructor
-		virtual void makeSound() const;
+		void makeSound() const;
 };
 
 #endif
