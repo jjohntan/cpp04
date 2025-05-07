@@ -6,7 +6,7 @@
 /*   By: jetan <jetan@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/26 16:55:17 by jetan             #+#    #+#             */
-/*   Updated: 2025/05/06 19:12:00 by jetan            ###   ########.fr       */
+/*   Updated: 2025/05/07 21:20:34 by jetan            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,8 @@ Dog &Dog::operator=(const Dog &other)
 	if (this != &other)
 	{
 		this->type = other.type;
-		delete brain;//clean old memory
+		if (brain != NULL)
+			delete brain;//clean old memory
 		brain = new Brain(*other.brain);//allocate new memory and copy
 	}
 	return *this;
